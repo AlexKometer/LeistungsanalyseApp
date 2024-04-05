@@ -15,7 +15,7 @@ The Experiment Builder is a Python program designed to assist in creating experi
 
 1. Clone this repository to your local machine.
 2. Make sure you have Python installed.
-3. Install the required dependencies, if any.
+3. Install the required dependencie json, if not installed yet.
 4. Run the `main.py` file.
 5. Follow the prompts to input experiment details.
 6. If needed, input new supervisor information when prompted.
