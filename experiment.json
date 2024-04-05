@@ -1,0 +1,16 @@
+{
+    "experiment_name": "test 456",
+    "date": "05-04-2024",
+    "supervisor": {
+        "first_name": "Alexander",
+        "last_name": "Kometer",
+        "age": 27,
+        "estimate_max_hr": 198
+    },
+    "subject": {
+        "first_name": "der",
+        "last_name": "Bankr\u00e4uber",
+        "age": 9,
+        "estimate_max_hr": 217
+    }
+}

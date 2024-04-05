@@ -1,4 +1,5 @@
 import json
+from datetime import datetime
 from my_function import build_person, build_experiment
 
 if __name__ == "__main__":
@@ -6,8 +7,18 @@ if __name__ == "__main__":
     print("Welcome to the experiment builder!")
     print("Please enter the following information about the experiment")
     print()
-    experiment_name = input("Enter the experiment name: "),
-    experiment_date = input("Enter the date(dd-mm-yyyy): ")
+    experiment_name = input("Enter the experiment name: ")
+    while True:
+        check = input("Do you want to use the current date? (y/n): ")
+        if check == "y":
+            experiment_date = datetime.now().strftime("%d-%m-%Y")
+            break
+        elif check == "n":
+            experiment_date = input("Enter the date(dd-mm-yyyy): ")
+            break
+        else:
+            print("Please enter a valid input!")
+
     while True:
         check = input("Do you want to enter new supervisor information? (y/n): ")
 
@@ -27,7 +38,7 @@ if __name__ == "__main__":
         else: 
             print("Please enter a valid input!")
         
-#test
+
     
     print()
     print("Please enter the following information about the experiment subject!")
